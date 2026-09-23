@@ -1,0 +1,21 @@
+{
+  "name": "genudo-ai",
+  "owner": {
+    "name": "Genudo",
+    "email": "help@genudo.ai",
+    "url": "https://genudo.ai"
+  },
+  "description": "Genudo — the enterprise operating platform for autonomous AI Employees: Aaref (Sales), Adnan (Customer Support), ROZ (Quality Control & Operations), and Sara (WhatsApp Campaign Sender) across WhatsApp, Instagram, Messenger, and Web.",
+  "plugins": [
+    {
+      "name": "genudo",
+      "source": "./genudo-plugin",
+      "description": "Genudo — the platform to build and manage an autonomous AI Workforce (Aaref, Adnan, ROZ, Sara) with ecosystem tool detection (Meta Ads, Google Sheets, Lovable, Zoho Desk, Zapier). 27 skills, 6 agents, and the Genudo connector built in — sign in through your browser, no token to paste."
+    },
+    {
+      "name": "genudo-no-connector",
+      "source": "./genudo-plugin-no-connector",
+      "description": "Genudo skills + agents WITHOUT a bundled MCP connector — for when you connect Genudo yourself: per project (claude mcp add --transport http genudo https://api.genudo.ai/mcp --scope project), as a custom connector in Claude web/desktop settings, or via the genudo.mcpb extension. 27 skills and 6 agents."
+    }
+  ]
+}
